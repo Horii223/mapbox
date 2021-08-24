@@ -49,7 +49,7 @@ body {
 
 
 <script>
-mapboxgl.accessToken = 'MY_TOKEN';
+mapboxgl.accessToken = 'pk.eyJ1IjoibmluamF3b3JrcyIsImEiOiJja3NmcmJ2ZW0wMWU2Mm9tYnliNDg2ODc1In0.w1VGl0MTj5Ihd5DWpPny1Q';
 
 let geojson = {
   type: 'FeatureCollection',
@@ -116,7 +116,7 @@ let map = new mapboxgl.Map({
       source: 'rainviewer',
       scale: 'noaa'
     });
-    map.addLayer(new RainLayer);
+    map.addLayer(new RainLayer({id:'rain'}));
 
 
 let nav = new mapboxgl.NavigationControl();
